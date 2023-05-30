@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:layout_marginVertical="8sp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <ImageView
+            android:id="@+id/userPhoto"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_margin="8sp"></ImageView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+            <TextView
+                android:id="@+id/nameUsernameText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:layout_marginStart="4sp"
+                android:text="@username"
+                android:textSize="15sp"></TextView>
+            <TextView
+            android:id="@+id/postDateText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:layout_marginStart="4sp"
+            android:text="Date"
+            android:textSize="15sp">
+        </TextView>
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/userCommentText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="user comment"
+            android:textSize="17sp"
+            android:layout_margin="8sp">
+        </TextView>
+
+        <ImageView
+            android:id="@+id/userPostImage"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="fitXY"
+            android:adjustViewBounds="true"
+            android:layout_margin="8sp">
+
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="210dp"
+            android:layout_height="315dp"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/thumbButton"
+                android:layout_width="70dp"
+                android:layout_height="91dp"
+                android:layout_margin="20dp"
+                android:src="@drawable/thumb2"></ImageButton>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</LinearLayout>
+

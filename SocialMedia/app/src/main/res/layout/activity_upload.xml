@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".view.UploadActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/design_default_color_primary_dark"
+        android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:title="Social Media">
+
+        <TextView
+            android:id="@+id/toolbarTextViewPost"
+            android:layout_width="80dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="200dp"
+            android:onClick="postFunc"
+            android:text="Post"
+            android:textSize="24sp"
+            tools:layout_editor_absoluteX="342dp"
+            tools:layout_editor_absoluteY="15dp">
+
+        </TextView>
+
+    </androidx.appcompat.widget.Toolbar>
+
+    <ImageView
+        android:id="@+id/userPphoto"
+        android:layout_width="65dp"
+        android:layout_height="65dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbar"
+        app:srcCompat="@drawable/defaultpp" />
+
+    <TextView
+        android:id="@+id/postUserName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="5dp"
+        android:text="userName"
+        android:textSize="15dp"
+        app:layout_constraintStart_toEndOf="@+id/userPphoto"
+        app:layout_constraintTop_toTopOf="@+id/userPphoto" />
+
+    <EditText
+        android:id="@+id/editTextComment"
+        android:layout_width="399dp"
+        android:layout_height="70dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="5dp"
+        android:ems="10"
+        android:hint="What's on your mind?"
+        android:inputType="textPersonName"
+        android:textSize="17dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/userPphoto" />
+
+    <TextView
+        android:id="@+id/add_photo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="20dp"
+        android:onClick="addPhoto"
+        android:text="+ Add Photo"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/editTextComment"
+        app:layout_constraintTop_toBottomOf="@+id/editTextComment" />
+
+    <ImageView
+        android:id="@+id/imagePost"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="5dp"
+        android:layout_marginBottom="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/add_photo" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
